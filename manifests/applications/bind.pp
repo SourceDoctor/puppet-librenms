@@ -11,10 +11,6 @@ class librenms::applications::bind (
 
     $snmpd_dir = $librenms::params::snmpd_dir
 
-    package {'libfile-readbackwards-perl':
-        ensure => 'latest',
-    }
-
     file {$stats_file:
         ensure => 'present',
         mode   => '0644',

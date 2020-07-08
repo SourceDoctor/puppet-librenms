@@ -6,10 +6,6 @@ class librenms::applications::dhcp (
 
     $snmpd_dir = $librenms::params::snmpd_dir
 
-    package {'dhcpd-pools':
-        ensure => 'latest',
-    }
-
     if $enabled {
         $file_existance = 'present'
     } else {

@@ -2,10 +2,6 @@ class librenms::applications::apache2 (
   Boolean $enabled = true,
 ) inherits librenms::params {
 
-    package {'python-urlgrabber':
-        ensure => 'latest',
-    }
-
     create_resources(librenms::fetch, {
             'apache-stats.py' => {
             use => $enabled,
