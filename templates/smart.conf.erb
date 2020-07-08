@@ -1,0 +1,8 @@
+cache=<%=@cache%>
+smartctl=<%=@smartctl_bin%>
+useSN=<% if @use_sn %>1<% else %>0<% end %>
+<% @blockdevices.split(',').each do | blockdev | -%>
+<%- if blockdev =~ /^sd/ or blockdev =~ /^ada/ or blockdev =~ /^da/ or blockdev =~ /^twl/ -%>
+<%= blockdev %><% if @smart_options.has_key? blockdev %> <%=@smart_options[blockdev]%><% end %>
+<% end -%>
+<% end -%>

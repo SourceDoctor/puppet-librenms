@@ -1,0 +1,14 @@
+#
+class librenms::discovery(
+    String $librenms_server = '',
+    String $api_token = '',
+    Enum['http', 'https'] $transport_protocol = 'http',
+) inherits librenms::params {
+
+    $curl_bin = $librenms::params::curl_bin
+
+    exec {'trigger_discovery':
+        command     => "${curl_bin} -s -L -H 'X-Auth-Token: ${api_token}' ${transport_protocol}://${librenms_server}/api/v0/devices/${facts['fqdn']}/discover",
+        refreshonly => true,
+    }
+}
