@@ -1,7 +1,7 @@
 Puppet module for LibreNMS Agents
 =================================
 
-[![Build Status](https://travis-ci.org/SourceDoctor/puppet-librenms.png?branch=master)](https://travis-ci.org/SourceDoctor/puppet-librenms)
+[![Build Status](https://travis-ci.org/SourceDoctor/puppet-librenms.svg?branch=master)](https://travis-ci.org/SourceDoctor/puppet-librenms)
 
 Description
 -----------
