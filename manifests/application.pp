@@ -29,6 +29,7 @@ class librenms::application (
     Boolean $smartmontools = false,
     Boolean $squid = false,
     Boolean $ups_apcups = false,
+    Boolean $ups_nut = false,
 ){
 
     # https://docs.librenms.org/Extensions/Applications/
@@ -147,6 +148,10 @@ class librenms::application (
 
     if $ups_apcups {
         include librenms::applications::ups_apcups
+    }
+
+    if $ups_nut {
+        include librenms::applications::ups_nut
     }
 
     include librenms::cache_dir

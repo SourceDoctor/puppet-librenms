@@ -80,6 +80,8 @@ class {'librenms::application':
   seafile       => false,
   smartmontools => false,
   squid         => false,
+  ups_apcups    => false,
+  ups_nut       => false,
 }
 ```
 
@@ -116,6 +118,7 @@ class {'librenms::application':
 1. [SMART](#smart) - SNMP extend
 1. [Squid](#squid) - SNMP extend
 1. [UPS APCUPS](#ups-apcups) - SNMP extend
+1. [UPS Nut](#ups-nut) - SNMP extend
 
 
 #### Apache
@@ -473,6 +476,15 @@ For Details take a look here [Squid](https://docs.librenms.org/Extensions/Applic
 #### UPS APCUPS
 ```puppet
 class { 'librenms::applications::ups_apcups':
+}
+```
+
+No further configurations needed.
+
+
+#### UPS Nut
+```puppet
+class { 'librenms::applications::ups_nut':
 }
 ```
 
