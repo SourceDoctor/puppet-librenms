@@ -12,15 +12,9 @@ Puppet module to configure and distribute [LibreNMS_SNMP_Agents](https://docs.li
 
 Dependencies
 ------------
-To avoid Package duplicate declaration Errors this module doesn't install any packages.
-Also it doesn't modify any configuration on the services the Agents are for.
+This Modul doesn't modify configuration of services the Agents are for.
 So please ensure the services you want to monitor match the requirements.
 Details for what to do are described or linked per Agent.
-
-This Module needs basically following packages:
-- curl
-- snmpd
-- sudo
 
 General Information
 -------------------
@@ -113,7 +107,7 @@ class { 'librenms::applications::apache2':
 }
 ```
 
-Ensure all depending configurations and package installations are done.
+Ensure all depending configurations are done.
 For Details take a look here [Apache2](https://docs.librenms.org/Extensions/Applications/#apache)
 
 
@@ -144,7 +138,7 @@ class { 'librenms::applications::bind':
 * `zero_stats` A boolean for if the stats file should be zeroed first. Default: false (true if guessed)
 
 
-Ensure all depending configurations and package installations are done.
+Ensure all depending configurations are done.
 For Details take a look here [Bind](https://docs.librenms.org/Extensions/Applications/#bind9-aka-named)
 
 
@@ -171,7 +165,7 @@ Example:
 * `fqdn` the domain to check
 * `port` If port differs from 443 you can specify it with this optional argument
 
-Ensure all depending configurations and package installations are done.
+Ensure all depending configurations are done.
 For Details take a look here [Certificate](https://docs.librenms.org/Extensions/Applications/#certificate)
 
 
@@ -184,7 +178,7 @@ class { 'librenms::applications::dhcp':
 
 * `lease_file` Lease File of DHCP Stats. Default: /var/lib/dhcp/dhcpd.leases
 
-Ensure all depending configurations and package installations are done.
+Ensure all depending configurations are done.
 For Details take a look here [Dhcp](https://docs.librenms.org/Extensions/Applications/#dhcp-stats)
 
 
@@ -223,7 +217,7 @@ class { 'librenms::applications::bind':
 * `radius_key` Key for authentication.
 
 
-Ensure all depending configurations and package installations are done.
+Ensure all depending configurations are done.
 For Details take a look here [FreeRadius](https://docs.librenms.org/Extensions/Applications/#freeradius)
 
 
@@ -283,7 +277,7 @@ class { 'librenms::applications::puppet_agent':
 }
 ```
 
-Ensure all depending configurations and package installations are done.
+Ensure all depending configurations are done.
 For Details take a look here [Puppet_Agent](https://docs.librenms.org/Extensions/Applications/#puppet_agent)
 
 
@@ -322,7 +316,7 @@ class { 'librenms::applications::seafile':
 * `account_identifier` Defines how user accounts are listed in RRD Graph. Options are: name, email. Default: name
 * `hide_monitoring_account` With this Boolean you can hide the Account which you use to access Seafile API. Default: true
 
-Ensure all depending configurations and package installations are done.
+Ensure all depending configurations are done.
 For Details take a look here [Seafile](https://docs.librenms.org/Extensions/Applications/#seafile)
 
 
@@ -359,7 +353,7 @@ class { 'librenms::applications::squid':
 
 * `snmp_community` SNMP Community Squid uses to publish it's data
 
-Ensure all depending configurations and package installations are done.
+Ensure all depending configurations are done.
 For Details take a look here [Squid](https://docs.librenms.org/Extensions/Applications/#squid)
 
 

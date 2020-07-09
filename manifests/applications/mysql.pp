@@ -9,6 +9,8 @@ class librenms::applications::mysql (
 
     $snmpd_dir = $librenms::params::snmpd_dir
 
+    ensure_packages([$librenms::params::php_cli_package, $librenms::params::php_mysql_package], ensure => present)
+
     if $enabled {
         $file_existance = 'present'
     } else {

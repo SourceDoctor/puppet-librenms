@@ -11,6 +11,8 @@ class librenms::applications::bind (
 
     $snmpd_dir = $librenms::params::snmpd_dir
 
+    ensure_packages([$librenms::params::perl_readbackwards_package], {ensure => present})
+
     file {$stats_file:
         ensure => 'present',
         mode   => '0644',

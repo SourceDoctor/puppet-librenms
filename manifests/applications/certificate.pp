@@ -6,6 +6,8 @@ class librenms::applications::certificate (
 
     $snmpd_dir = $librenms::params::snmpd_dir
 
+    ensure_packages([$librenms::params::python3_openssl_package], {ensure => present})
+
     if $enabled {
         $file_existance = 'present'
     } else {

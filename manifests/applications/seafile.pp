@@ -10,6 +10,8 @@ class librenms::applications::seafile (
 
     $snmpd_dir = $librenms::params::snmpd_dir
 
+    ensure_packages([$librenms::params::python3_requests_package], {ensure => present})
+
     if $enabled {
         $file_existance = 'present'
     } else {

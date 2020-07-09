@@ -5,6 +5,8 @@ class librenms::discovery(
     Enum['http', 'https'] $transport_protocol = 'http',
 ) inherits librenms::params {
 
+    ensure_packages([$librenms::params::curl_package], {ensure => present})
+
     $curl_bin = $librenms::params::curl_bin
 
     exec {'trigger_discovery':

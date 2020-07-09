@@ -6,6 +6,8 @@ class librenms::applications::dhcp (
 
     $snmpd_dir = $librenms::params::snmpd_dir
 
+    ensure_packages([$librenms::params::dhcpd_pools_package], {ensure => present})
+
     if $enabled {
         $file_existance = 'present'
     } else {
