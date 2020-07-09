@@ -12,6 +12,7 @@ class librenms::application (
     Boolean $fail2ban = false,
     Boolean $freeradius = false,
     Boolean $freeswitch = false,
+    Boolean $gpsd = false,
     Boolean $mdadm = false,
     Boolean $memcached = false,
     Boolean $mysql = false,
@@ -73,6 +74,10 @@ class librenms::application (
 
     if $freeswitch {
         include librenms::applications::freeswitch
+    }
+
+    if $gpsd {
+        include librenms::applications::gpsd
     }
 
     if $mdadm {

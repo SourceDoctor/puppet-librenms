@@ -65,6 +65,8 @@ class {'librenms::application':
   entropy       => false,
   exim          => false,
   freeradius    => false,
+  freeswitch    => false,
+  gpsd          => false,
   mdadm         => false,
   memcached     => false,
   mysql         => false,
@@ -94,6 +96,8 @@ class {'librenms::application':
 1. [Entropy](#entropy) - SNMP extend
 1. [Exim](#exim) - SNMP extend
 1. [FreeRADIUS](#freeradius) - SNMP extend
+1. [FreeSwitch](#freeswitch) - SNMP extend
+1. [GPSD](#gpsd) - SNMP extend
 1. [Mdadm](#mdadm) - SNMP extend
 1. [Memcached](#memcached) - SNMP extend
 1. [MySQL](#mysql) - SNMP extend
@@ -276,11 +280,22 @@ class { 'librenms::applications::freeswitch':
 No further configurations needed.
 
 
+#### GPSD
+```puppet
+class { 'librenms::applications::gpsd':
+}
+```
+
+No further configurations needed.
+
+
 #### Mdadm
 ```puppet
 class { 'librenms::applications::mdadm':
 }
 ```
+
+No further configurations needed.
 
 
 #### Memcached
