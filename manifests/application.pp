@@ -13,6 +13,7 @@ class librenms::application (
     Boolean $freeradius = false,
     Boolean $freeswitch = false,
     Boolean $gpsd = false,
+    Boolean $mailcow_dockerized_postfix = false,
     Boolean $mdadm = false,
     Boolean $memcached = false,
     Boolean $mysql = false,
@@ -78,6 +79,10 @@ class librenms::application (
 
     if $gpsd {
         include librenms::applications::gpsd
+    }
+
+    if $mailcow_dockerized_postfix {
+        include librenms::applications::mailcow_dockerized_postfix
     }
 
     if $mdadm {

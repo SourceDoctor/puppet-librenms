@@ -98,6 +98,7 @@ class {'librenms::application':
 1. [FreeRADIUS](#freeradius) - SNMP extend
 1. [FreeSwitch](#freeswitch) - SNMP extend
 1. [GPSD](#gpsd) - SNMP extend
+1. [Mailcow-dockerized Postfix](#mailcow-dockerized-postfix) - SNMP extend
 1. [Mdadm](#mdadm) - SNMP extend
 1. [Memcached](#memcached) - SNMP extend
 1. [MySQL](#mysql) - SNMP extend
@@ -283,6 +284,15 @@ No further configurations needed.
 #### GPSD
 ```puppet
 class { 'librenms::applications::gpsd':
+}
+```
+
+No further configurations needed.
+
+
+#### Mailcow-dockerized postfix
+```puppet
+class { 'librenms::applications::mailcow_dockerized_postfix':
 }
 ```
 

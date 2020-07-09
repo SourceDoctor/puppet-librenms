@@ -22,6 +22,8 @@ class librenms::params {
           $php_cli_package = 'php-cli'
           $php_mysql_package = 'php-mysql'
 
+          $pflogsumm_package = 'pflogsumm'
+
           $python_urlgrabber_package = 'python-urlgrabber'
           $python_pycurl_package = 'python-pycurl'
           $python3_openssl_package = 'python3-openssl'
