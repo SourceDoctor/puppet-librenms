@@ -12,8 +12,8 @@ class librenms::applications::freeswitch (
 
     create_resources(librenms::fetch, {
             'freeswitch' => {
-             use      => $enabled,
-             base_url => 'http://raw.githubusercontent.com/librenms/librenms-agent/master/snmp/agent-local'
+              use      => $enabled,
+              base_url => 'http://raw.githubusercontent.com/librenms/librenms-agent/master/snmp/agent-local'
     }})
 
     librenms::snmpd{'freeswitch':

@@ -14,6 +14,7 @@ class librenms::application (
     Boolean $freeswitch = false,
     Boolean $gpsd = false,
     Boolean $mailcow_dockerized_postfix = false,
+    Boolean $mailscanner = false,
     Boolean $mdadm = false,
     Boolean $memcached = false,
     Boolean $mysql = false,
