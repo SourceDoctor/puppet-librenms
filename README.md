@@ -70,6 +70,7 @@ class {'librenms::application':
   mdadm         => false,
   memcached     => false,
   mysql         => false,
+  ntp_client    => false,
   ntp_server    => false,
   nvidia        => false,
   osupdate      => false,
@@ -107,6 +108,7 @@ class {'librenms::application':
 1. [Mdadm](#mdadm) - SNMP extend
 1. [Memcached](#memcached) - SNMP extend
 1. [MySQL](#mysql) - SNMP extend
+1. [NTP Client](#ntp-client) - SNMP extend
 1. [NTP Server/NTPD](#ntp-server-aka-ntpd) - SNMP extend
 1. [Nvidia GPU](#nvidia-gpu) - SNMP extend
 1. [OS Updates](#os-updates) - SNMP extend
@@ -349,6 +351,15 @@ class { 'librenms::applications::mysql':
 * `pass` Password. Default: root
 * `host` IP or Hostname Database Server is listening on. Default: localhost
 * `port` Port Database Server is listening on. Default  3306
+
+
+#### NTP-Client
+```puppet
+class { 'librenms::applications::ntp_client':
+}
+```
+
+No further configurations needed.
 
 
 #### NTP-Server aka NTPd
