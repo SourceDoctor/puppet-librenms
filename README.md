@@ -74,6 +74,7 @@ class {'librenms::application':
   ntp_server    => false,
   nvidia        => false,
   osupdate      => false,
+  php_fpm       => false,
   postfix       => false,
   puppet_agent  => false,
   pureftpd      => false,
@@ -113,6 +114,7 @@ class {'librenms::application':
 1. [NTP Server/NTPD](#ntp-server-aka-ntpd) - SNMP extend
 1. [Nvidia GPU](#nvidia-gpu) - SNMP extend
 1. [OS Updates](#os-updates) - SNMP extend
+1. [PHP FPM](#php-fpm) - SNMP extend
 1. [Postfix](#postfix) - SNMP extend
 1. [Puppet Agent](#puppet_agent) - SNMP extend
 1. [PureFTPd](#pureftpd) - SNMP extend
@@ -385,6 +387,15 @@ No further configurations needed.
 #### OS-Updates
 ```puppet
 class { 'librenms::applications::osupdate':
+}
+```
+
+No further configurations needed.
+
+
+#### PHP FPM
+```puppet
+class { 'librenms::applications::php_fpm':
 }
 ```
 
