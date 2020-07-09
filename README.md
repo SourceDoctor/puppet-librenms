@@ -115,6 +115,7 @@ class {'librenms::application':
 1. [Seafile](#seafile) - SNMP extend
 1. [SMART](#smart) - SNMP extend
 1. [Squid](#squid) - SNMP extend
+1. [UPS APCUPS](#ups-apcups) - SNMP extend
 
 
 #### Apache
@@ -468,4 +469,12 @@ class { 'librenms::applications::squid':
 Ensure all depending configurations are done.
 For Details take a look here [Squid](https://docs.librenms.org/Extensions/Applications/#squid)
 
+
+#### UPS APCUPS
+```puppet
+class { 'librenms::applications::ups_apcups':
+}
+```
+
+No further configurations needed.
 

@@ -28,6 +28,7 @@ class librenms::application (
     Boolean $seafile = false,
     Boolean $smartmontools = false,
     Boolean $squid = false,
+    Boolean $ups_apcups = false,
 ){
 
     # https://docs.librenms.org/Extensions/Applications/
@@ -142,6 +143,10 @@ class librenms::application (
 
     if $squid {
         include librenms::applications::squid
+    }
+
+    if $ups_apcups {
+        include librenms::applications::ups_apcups
     }
 
     include librenms::cache_dir
