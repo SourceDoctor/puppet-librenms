@@ -54,37 +54,38 @@ class {'librenms::discovery':
 ### Which Agent Scripts should be installed
 ```puppet
 class {'librenms::application':
-  apache2       => false,
-  asterisk      => false,
-  backupninja   => false,
-  bind          => false,
-  certificate   => false,
-  chip          => false,
-  dhcp          => false,
-  distribution  => false,
-  entropy       => false,
-  exim          => false,
-  freeradius    => false,
-  freeswitch    => false,
-  gpsd          => false,
-  mdadm         => false,
-  memcached     => false,
-  mysql         => false,
-  ntp_client    => false,
-  ntp_server    => false,
-  nvidia        => false,
-  osupdate      => false,
-  php_fpm       => false,
-  postfix       => false,
-  puppet_agent  => false,
-  pureftpd      => false,
-  redis         => false,
-  sdfsinfo      => false,
-  seafile       => false,
-  smartmontools => false,
-  squid         => false,
-  ups_apcups    => false,
-  ups_nut       => false,
+  apache2             => false,
+  asterisk            => false,
+  backupninja         => false,
+  bind                => false,
+  certificate         => false,
+  chip                => false,
+  dhcp                => false,
+  distribution        => false,
+  entropy             => false,
+  exim                => false,
+  freeradius          => false,
+  freeswitch          => false,
+  gpsd                => false,
+  mdadm               => false,
+  memcached           => false,
+  mysql               => false,
+  ntp_client          => false,
+  ntp_server          => false,
+  nvidia              => false,
+  open_grid_scheduler => false,
+  osupdate            => false,
+  php_fpm             => false,
+  postfix             => false,
+  puppet_agent        => false,
+  pureftpd            => false,
+  redis               => false,
+  sdfsinfo            => false,
+  seafile             => false,
+  smartmontools       => false,
+  squid               => false,
+  ups_apcups          => false,
+  ups_nut             => false,
 }
 ```
 
@@ -113,6 +114,7 @@ class {'librenms::application':
 1. [NTP Client](#ntp-client) - SNMP extend
 1. [NTP Server/NTPD](#ntp-server-aka-ntpd) - SNMP extend
 1. [Nvidia GPU](#nvidia-gpu) - SNMP extend
+1. [Open Grid Scheduler](#open-grid-scheduler) - SNMP extend
 1. [OS Updates](#os-updates) - SNMP extend
 1. [PHP FPM](#php-fpm) - SNMP extend
 1. [Postfix](#postfix) - SNMP extend
@@ -378,6 +380,15 @@ No further configurations needed.
 #### Nvidia GPU
 ```puppet
 class { 'librenms::applications::nvidia':
+}
+```
+
+No further configurations needed.
+
+
+#### Open Grid Scheduler
+```puppet
+class { 'librenms::applications::open_grid_scheduler':
 }
 ```
 

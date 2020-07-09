@@ -21,6 +21,7 @@ class librenms::application (
     Boolean $ntp_client = false,
     Boolean $ntp_server = false,
     Boolean $nvidia = false,
+    Boolean $open_grid_scheduler = false,
     Boolean $osupdate = false,
     Boolean $php_fpm = false,
     Boolean $postfix = false,
@@ -119,6 +120,10 @@ class librenms::application (
 
     if $ntp_server {
         include librenms::applications::ntp_server
+    }
+
+    if $open_grid_scheduler {
+        include librenms::applications::open_grid_scheduler
     }
 
     if $osupdate {
