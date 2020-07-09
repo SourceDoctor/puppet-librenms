@@ -9,6 +9,7 @@ class librenms::application (
     Boolean $distribution = false,
     Boolean $entropy = false,
     Boolean $exim = false,
+    Boolean $fail2ban = false,
     Boolean $freeradius = false,
     Boolean $mdadm = false,
     Boolean $memcached = false,
@@ -59,6 +60,10 @@ class librenms::application (
 
     if $exim {
         include librenms::applications::exim
+    }
+
+    if $fail2ban {
+        include librenms::applications::fail2ban
     }
 
     if $freeradius {

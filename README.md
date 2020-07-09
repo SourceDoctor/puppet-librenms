@@ -238,6 +238,16 @@ class { 'librenms::applications::exim':
 No further configurations needed.
 
 
+#### Fail2ban
+```puppet
+class { 'librenms::applications::fail2ban':
+  cache => true,
+}
+```
+
+* `true` If you want to cache results. Default: true
+
+
 #### FreeRadius
 ```puppet
 class { 'librenms::applications::bind':
