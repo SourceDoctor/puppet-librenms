@@ -76,6 +76,7 @@ class {'librenms::application':
   puppet_agent  => false,
   pureftpd      => false,
   redis         => false,
+  sdfsinfo      => false,
   seafile       => false,
   smartmontools => false,
   squid         => false,
@@ -110,6 +111,7 @@ class {'librenms::application':
 1. [Puppet Agent](#puppet_agent) - SNMP extend
 1. [PureFTPd](#pureftpd) - SNMP extend
 1. [Redis](#redis) - SNMP extend
+1. [SDFSinfo](#sdfs-info) - SNMP extend
 1. [Seafile](#seafile) - SNMP extend
 1. [SMART](#smart) - SNMP extend
 1. [Squid](#squid) - SNMP extend
@@ -394,6 +396,15 @@ No further configurations needed.
 #### Redis
 ```puppet
 class { 'librenms::applications::redis':
+}
+```
+
+No further configurations needed.
+
+
+#### SDFS info
+```puppet
+class { 'librenms::applications::sdfsinfo':
 }
 ```
 

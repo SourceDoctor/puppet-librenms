@@ -24,6 +24,7 @@ class librenms::application (
     Boolean $puppet_agent = false,
     Boolean $pureftpd = false,
     Boolean $redis = false,
+    Boolean $sdfsinfo = false,
     Boolean $seafile = false,
     Boolean $smartmontools = false,
     Boolean $squid = false,
@@ -125,6 +126,10 @@ class librenms::application (
 
     if $redis {
         include librenms::applications::redis
+    }
+
+    if $sdfsinfo {
+        include librenms::applications::sdfsinfo
     }
 
     if $seafile {
