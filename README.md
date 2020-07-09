@@ -71,6 +71,7 @@ class {'librenms::application':
   memcached     => false,
   mysql         => false,
   ntp_server    => false,
+  nvidia        => false,
   osupdate      => false,
   puppet_agent  => false,
   pureftpd      => false,
@@ -104,6 +105,7 @@ class {'librenms::application':
 1. [Memcached](#memcached) - SNMP extend
 1. [MySQL](#mysql) - SNMP extend
 1. [NTP Server/NTPD](#ntp-server-aka-ntpd) - SNMP extend
+1. [Nvidia GPU](#nvidia-gpu) - SNMP extend
 1. [OS Updates](#os-updates) - SNMP extend
 1. [Puppet Agent](#puppet_agent) - SNMP extend
 1. [PureFTPd](#pureftpd) - SNMP extend
