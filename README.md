@@ -59,6 +59,7 @@ class {'librenms::application':
   backupninja   => false,
   bind          => false,
   certificate   => false,
+  chip          => false,
   dhcp          => false,
   distribution  => false,
   entropy       => false,
@@ -86,7 +87,8 @@ class {'librenms::application':
 1. [Asterisk](#asterisk) - SNMP extend
 1. [Backupninja](#backupninja) - SNMP extend
 1. [BIND9/named](#bind9-aka-named) - SNMP extend
-1. [Certificate](#certificate) - Certificate extend
+1. [C.H.I.P](#chip) - SNMP extend
+1. [Certificate](#certificate) - SNMP extend
 1. [DHCP Stats](#dhcp-stats) - SNMP extend
 1. [Entropy](#entropy) - SNMP extend
 1. [FreeRADIUS](#freeradius) - SNMP extend
@@ -178,6 +180,16 @@ Example:
 
 Ensure all depending configurations are done.
 For Details take a look here [Certificate](https://docs.librenms.org/Extensions/Applications/#certificate)
+
+
+#### Chip
+
+```puppet
+class { 'librenms::applications::chip':
+}
+```
+
+No further configurations needed.
 
 
 #### DHCP-Stats
