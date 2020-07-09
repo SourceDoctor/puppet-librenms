@@ -85,6 +85,10 @@ class librenms::application (
         include librenms::applications::mailcow_dockerized_postfix
     }
 
+    if $mailscanner {
+        include librenms::applications::mailscanner
+    }
+
     if $mdadm {
         include librenms::applications::mdadm
     }
