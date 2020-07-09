@@ -266,6 +266,16 @@ Ensure all depending configurations are done.
 For Details take a look here [FreeRadius](https://docs.librenms.org/Extensions/Applications/#freeradius)
 
 
+#### Freeswitch
+
+```puppet
+class { 'librenms::applications::freeswitch':
+}
+```
+
+No further configurations needed.
+
+
 #### Mdadm
 ```puppet
 class { 'librenms::applications::mdadm':
