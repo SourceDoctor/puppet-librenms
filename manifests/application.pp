@@ -18,6 +18,7 @@ class librenms::application (
     Boolean $memcached = false,
     Boolean $mysql = false,
     Boolean $ntp_server = false,
+    Boolean $nvidia = false,
     Boolean $osupdate = false,
     Boolean $puppet_agent = false,
     Boolean $pureftpd = false,
@@ -99,6 +100,10 @@ class librenms::application (
 
     if $mysql {
         include librenms::applications::mysql
+    }
+
+    if $nvidia {
+        include librenms::applications::nvidia
     }
 
     if $ntp_server {

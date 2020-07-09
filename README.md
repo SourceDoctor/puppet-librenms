@@ -352,6 +352,15 @@ class { 'librenms::applications::ntp_server':
 No further configurations needed.
 
 
+#### Nvidia GPU
+```puppet
+class { 'librenms::applications::nvidia':
+}
+```
+
+No further configurations needed.
+
+
 #### OS-Updates
 ```puppet
 class { 'librenms::applications::osupdate':

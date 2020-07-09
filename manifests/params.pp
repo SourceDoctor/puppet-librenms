@@ -17,6 +17,8 @@ class librenms::params {
           $env_bin = '/usr/bin/env'
           $ls_bin = '/bin/ls'
 
+          $nvidia_smi_package = 'nvidia-smi'
+
           $perl_readbackwards_package = 'libfile-readbackwards-perl'
 
           $php_cli_package = 'php-cli'
