@@ -22,6 +22,7 @@ class librenms::application (
     Boolean $ntp_server = false,
     Boolean $nvidia = false,
     Boolean $osupdate = false,
+    Boolean $postfix = false,
     Boolean $puppet_agent = false,
     Boolean $pureftpd = false,
     Boolean $redis = false,
@@ -121,6 +122,10 @@ class librenms::application (
 
     if $osupdate {
         include librenms::applications::osupdate
+    }
+
+    if $postfix {
+        include librenms::applications::postfix
     }
 
     if $puppet_agent {

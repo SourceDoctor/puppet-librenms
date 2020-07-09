@@ -1,4 +1,4 @@
-Puppet module for LibreNMS Agents
+Puppet Module for LibreNMS SNMP Agents
 =================================
 
 [![Build Status](https://travis-ci.org/SourceDoctor/puppet-librenms.svg?branch=master)](https://travis-ci.org/SourceDoctor/puppet-librenms)
@@ -6,7 +6,7 @@ Puppet module for LibreNMS Agents
 Description
 -----------
 
-Puppet module to configure and distribute [LibreNMS_SNMP_Agents](https://docs.librenms.org/Extensions/Applications/).
+Puppet Module to configure and distribute [LibreNMS_SNMP_Agents](https://docs.librenms.org/Extensions/Applications/).
 
 (Server configuration will come in a future version also)
 
@@ -74,6 +74,7 @@ class {'librenms::application':
   ntp_server    => false,
   nvidia        => false,
   osupdate      => false,
+  postfix       => false,
   puppet_agent  => false,
   pureftpd      => false,
   redis         => false,
@@ -112,6 +113,7 @@ class {'librenms::application':
 1. [NTP Server/NTPD](#ntp-server-aka-ntpd) - SNMP extend
 1. [Nvidia GPU](#nvidia-gpu) - SNMP extend
 1. [OS Updates](#os-updates) - SNMP extend
+1. [Postfix](#postfix) - SNMP extend
 1. [Puppet Agent](#puppet_agent) - SNMP extend
 1. [PureFTPd](#pureftpd) - SNMP extend
 1. [Redis](#redis) - SNMP extend
@@ -397,6 +399,15 @@ class { 'librenms::applications::puppet_agent':
 
 Ensure all depending configurations are done.
 For Details take a look here [Puppet_Agent](https://docs.librenms.org/Extensions/Applications/#puppet_agent)
+
+
+#### Postfix
+```puppet
+class { 'librenms::applications::postfix':
+}
+```
+
+No further configurations needed.
 
 
 #### PureFTPd
