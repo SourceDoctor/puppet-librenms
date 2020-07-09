@@ -56,6 +56,7 @@ class {'librenms::discovery':
 class {'librenms::application':
   apache2       => false,
   asterisk      => false,
+  backupninja   => false,
   bind          => false,
   certificate   => false,
   dhcp          => false,
@@ -83,6 +84,7 @@ class {'librenms::application':
 
 1. [Apache](#apache) - SNMP extend
 1. [Asterisk](#asterisk) - SNMP extend
+1. [Backupninja](#backupninja) - SNMP extend
 1. [BIND9/named](#bind9-aka-named) - SNMP extend
 1. [Certificate](#certificate) - Certificate extend
 1. [DHCP Stats](#dhcp-stats) - SNMP extend
@@ -114,6 +116,15 @@ For Details take a look here [Apache2](https://docs.librenms.org/Extensions/Appl
 #### Asterisk
 ```puppet
 class { 'librenms::applications::asterisk':
+}
+```
+
+No further configurations needed.
+
+
+#### Backupninja
+```puppet
+class { 'librenms::applications::backupninja':
 }
 ```
 

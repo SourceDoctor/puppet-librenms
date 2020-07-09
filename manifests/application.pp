@@ -2,6 +2,7 @@
 class librenms::application (
     Boolean $apache2 = false,
     Boolean $asterisk = false,
+    Boolean $backupninja = false,
     Boolean $bind = false,
     Boolean $certificate = false,
     Boolean $dhcp = false,
@@ -29,6 +30,10 @@ class librenms::application (
 
     if $asterisk {
         include librenms::applications::asterisk
+    }
+
+    if $backupninja {
+        include librenms::applications::backupninja
     }
 
     if $bind {
