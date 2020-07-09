@@ -63,6 +63,7 @@ class {'librenms::application':
   dhcp          => false,
   distribution  => false,
   entropy       => false,
+  exim          => false,
   freeradius    => false,
   mdadm         => false,
   memcached     => false,
@@ -91,6 +92,7 @@ class {'librenms::application':
 1. [Certificate](#certificate) - SNMP extend
 1. [DHCP Stats](#dhcp-stats) - SNMP extend
 1. [Entropy](#entropy) - SNMP extend
+1. [Exim](#exim) - SNMP extend
 1. [FreeRADIUS](#freeradius) - SNMP extend
 1. [Mdadm](#mdadm) - SNMP extend
 1. [Memcached](#memcached) - SNMP extend
@@ -220,6 +222,16 @@ No further configurations needed.
 #### Entropy
 ```puppet
 class { 'librenms::applications::entropy':
+}
+```
+
+No further configurations needed.
+
+
+#### Exim
+
+```puppet
+class { 'librenms::applications::exim':
 }
 ```
 

@@ -8,6 +8,7 @@ class librenms::application (
     Boolean $dhcp = false,
     Boolean $distribution = false,
     Boolean $entropy = false,
+    Boolean $exim = false,
     Boolean $freeradius = false,
     Boolean $mdadm = false,
     Boolean $memcached = false,
@@ -54,6 +55,10 @@ class librenms::application (
 
     if $entropy {
         include librenms::applications::entropy
+    }
+
+    if $exim {
+        include librenms::applications::exim
     }
 
     if $freeradius {
