@@ -202,9 +202,6 @@ Example:
 * `fqdn` the domain to check
 * `port` If port differs from 443 you can specify it with this optional argument
 
-Ensure all depending configurations are done.
-For Details take a look here [Certificate](https://docs.librenms.org/Extensions/Applications/#certificate)
-
 
 #### Chip
 
@@ -224,9 +221,6 @@ class { 'librenms::applications::dhcp':
 ```
 
 * `lease_file` Lease File of DHCP Stats. Default: /var/lib/dhcp/dhcpd.leases
-
-Ensure all depending configurations are done.
-For Details take a look here [Dhcp](https://docs.librenms.org/Extensions/Applications/#dhcp-stats)
 
 
 #### Distribution
@@ -475,9 +469,6 @@ class { 'librenms::applications::seafile':
 * `password` Password to the configured login. Default: ''
 * `account_identifier` Defines how user accounts are listed in RRD Graph. Options are: name, email. Default: name
 * `hide_monitoring_account` With this Boolean you can hide the Account which you use to access Seafile API. Default: true
-
-Ensure all depending configurations are done.
-For Details take a look here [Seafile](https://docs.librenms.org/Extensions/Applications/#seafile)
 
 
 #### Smart
