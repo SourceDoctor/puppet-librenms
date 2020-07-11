@@ -9,8 +9,8 @@ class librenms::applications::nfs_client (
         }})
 
         librenms::snmpd{'fbsdnfsclient':
-            use     => $enabled,
-            script  => 'fbsdnfsclient',
+            use    => $enabled,
+            script => 'fbsdnfsclient',
         }
     } else {
         notice{'No Linux Version of NFS-Client present':

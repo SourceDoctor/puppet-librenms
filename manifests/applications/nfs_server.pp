@@ -9,8 +9,8 @@ class librenms::applications::nfs_server (
         }})
 
         librenms::snmpd{'fbsdnfsserver':
-            use     => $enabled,
-            script  => 'fbsdnfsserver',
+            use    => $enabled,
+            script => 'fbsdnfsserver',
         }
     } else {
         librenms::snmpd{'nfs-server':
