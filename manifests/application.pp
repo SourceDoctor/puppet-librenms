@@ -155,6 +155,10 @@ class librenms::application (
         include librenms::applications::postfix
     }
 
+    if $postgres {
+        include librenms::applications::postgres
+    }
+
     if $puppet_agent {
         include librenms::applications::puppet_agent
     }

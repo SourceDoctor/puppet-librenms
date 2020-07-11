@@ -430,6 +430,15 @@ class { 'librenms::applications::postfix':
 No further configurations needed.
 
 
+#### Postgres
+```puppet
+class { 'librenms::applications::postgres':
+}
+```
+
+No further configurations needed.
+
+
 #### PowerDNS
 ```puppet
 class { 'librenms::applications::powerdns':
