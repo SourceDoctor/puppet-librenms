@@ -15,6 +15,9 @@ class librenms::params {
           $dhcpd_pools_package = 'dhcpd-pools'
 
           $env_bin = '/usr/bin/env'
+
+          $libpve_apiclient_perl_package = 'libpve-apiclient-perl'
+
           $ls_bin = '/bin/ls'
 
           $nvidia_smi_package = 'nvidia-smi'

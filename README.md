@@ -462,6 +462,15 @@ Add to the LibreNMS `config.php` file such options:
 `$config['apps']['powerdns-recursor']['https']` true or false, defaults to use http.
 
 
+#### Proxmox
+```puppet
+class { 'librenms::applications::proxmox':
+}
+```
+
+No further configurations needed.
+
+
 #### PureFTPd
 ```puppet
 class { 'librenms::applications::pureftpd':
