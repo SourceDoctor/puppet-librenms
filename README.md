@@ -471,6 +471,15 @@ class { 'librenms::applications::pureftpd':
 No further configurations needed.
 
 
+#### Raspberry Pi
+```puppet
+class { 'librenms::applications::raspberry_pi':
+}
+```
+
+No further configurations needed.
+
+
 #### Redis
 ```puppet
 class { 'librenms::applications::redis':

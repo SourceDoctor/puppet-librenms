@@ -30,6 +30,7 @@ class librenms::application (
     Boolean $postfix = false,
     Boolean $puppet_agent = false,
     Boolean $pureftpd = false,
+    Boolean $raspberry_pi = false,
     Boolean $redis = false,
     Boolean $sdfsinfo = false,
     Boolean $seafile = false,
@@ -159,6 +160,10 @@ class librenms::application (
 
     if $pureftpd {
         include librenms::applications::pureftpd
+    }
+
+    if $raspberry_pi {
+        include librenms::applications::raspberry_pi
     }
 
     if $redis {
