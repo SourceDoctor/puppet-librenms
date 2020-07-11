@@ -78,6 +78,7 @@ class {'librenms::application':
   php_fpm             => false,
   postfix             => false,
   powerdns            => false,
+  powerdns_recursor   => false,
   puppet_agent        => false,
   pureftpd            => false,
   redis               => false,
@@ -120,6 +121,7 @@ class {'librenms::application':
 1. [PHP FPM](#php-fpm) - SNMP extend
 1. [Postfix](#postfix) - SNMP extend
 1. [PowerDNS](#powerdns) - SNMP extend
+1. [PowerDNS Recursor](#powerdns-recursor) - SNMP extend
 1. [Puppet Agent](#puppet_agent) - SNMP extend
 1. [PureFTPd](#pureftpd) - SNMP extend
 1. [Redis](#redis) - SNMP extend
@@ -435,6 +437,20 @@ class { 'librenms::applications::powerdns':
 ```
 
 No further configurations needed.
+
+
+#### PowerDNS Recursor
+```puppet
+class { 'librenms::applications::powerdns_recursor':
+}
+```
+
+Add to the LibreNMS `config.php` file such options:
+`$config['apps']['powerdns-recursor']['api-key']` required, this is defined in the Recursor config
+
+`$config['apps']['powerdns-recursor']['port']` numeric, defines the port to connect to PowerDNS Recursor on. The default is 8082
+
+`$config['apps']['powerdns-recursor']['https']` true or false, defaults to use http.
 
 
 #### PureFTPd
