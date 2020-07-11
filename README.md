@@ -411,14 +411,16 @@ class { 'librenms::applications::php_fpm':
 No further configurations needed.
 
 
-#### Puppet Agent
+#### Portactivity
 ```puppet
-class { 'librenms::applications::puppet_agent':
+class { 'librenms::applications::portactivity':
+  services => [],
 }
 ```
 
-Ensure all depending configurations are done.
-For Details take a look here [Puppet_Agent](https://docs.librenms.org/Extensions/Applications/#puppet_agent)
+* `services` List of Services to be monitored
+
+Services should be listed in `/etc/services`
 
 
 #### Postfix
@@ -478,6 +480,16 @@ class { 'librenms::applications::proxmox':
 ```
 
 No further configurations needed.
+
+
+#### Puppet Agent
+```puppet
+class { 'librenms::applications::puppet_agent':
+}
+```
+
+Ensure all depending configurations are done.
+For Details take a look here [Puppet_Agent](https://docs.librenms.org/Extensions/Applications/#puppet_agent)
 
 
 #### PureFTPd

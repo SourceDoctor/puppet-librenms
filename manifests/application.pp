@@ -24,6 +24,7 @@ class librenms::application (
     Boolean $open_grid_scheduler = false,
     Boolean $osupdate = false,
     Boolean $php_fpm = false,
+    Boolean $portactivity = false,
     Boolean $powerdns = false,
     Boolean $powerdns_dnsdist = false,
     Boolean $powerdns_recursor = false,
@@ -137,6 +138,10 @@ class librenms::application (
 
     if $php_fpm {
         include librenms::applications::php_fpm
+    }
+
+    if $portactivity {
+        include librenms::applications::portactivity
     }
 
     if $powerdns {

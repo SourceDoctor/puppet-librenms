@@ -16,6 +16,8 @@ class librenms::params {
 
           $env_bin = '/usr/bin/env'
 
+          $libjson_perl_package = 'libjson-perl'
+          $libparse_netstat_perl_package = 'libparse-netstat-perl'
           $libpve_apiclient_perl_package = 'libpve-apiclient-perl'
 
           $ls_bin = '/bin/ls'
