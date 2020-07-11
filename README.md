@@ -439,6 +439,15 @@ class { 'librenms::applications::powerdns':
 No further configurations needed.
 
 
+#### PowerDNS dnsdist
+```puppet
+class { 'librenms::applications::powerdns_dnsdist':
+}
+```
+
+No further configurations needed.
+
+
 #### PowerDNS Recursor
 ```puppet
 class { 'librenms::applications::powerdns_recursor':

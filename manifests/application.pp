@@ -25,6 +25,7 @@ class librenms::application (
     Boolean $osupdate = false,
     Boolean $php_fpm = false,
     Boolean $powerdns = false,
+    Boolean $powerdns_dnsdist = false,
     Boolean $powerdns_recursor = false,
     Boolean $postfix = false,
     Boolean $puppet_agent = false,
@@ -138,6 +139,10 @@ class librenms::application (
 
     if $powerdns {
         include librenms::applications::powerdns
+    }
+
+    if $powerdns_dnsdist {
+        include librenms::applications::powerdns_dnsdist
     }
 
     if $powerdns_recursor {
