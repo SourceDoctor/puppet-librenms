@@ -15,7 +15,7 @@ class librenms::applications::nfs_server (
     } else {
         librenms::snmpd{'nfs-server':
             use      => $enabled,
-            script   => $agent_script,
+            script   => '',
             template => 'nfs-server.conf_snmp.erb',
         }
     }
