@@ -29,6 +29,7 @@ class librenms::application (
     Boolean $powerdns_dnsdist = false,
     Boolean $powerdns_recursor = false,
     Boolean $postfix = false,
+    Boolean $postgres = false,
     Boolean $puppet_agent = false,
     Boolean $pureftpd = false,
     Boolean $proxmox = false,
