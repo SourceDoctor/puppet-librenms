@@ -5,6 +5,12 @@ class librenms::applications::pi_hole (
 
     $snmpd_dir = $librenms::params::snmpd_dir
 
+    if $enabled {
+        $file_existance = 'present'
+    } else {
+        $file_existance = 'absent'
+    }
+
     create_resources(librenms::fetch, {
             'pi-hole' => {
             use => $enabled,
