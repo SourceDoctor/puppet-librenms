@@ -70,7 +70,8 @@ class {'librenms::application':
   mdadm               => false,
   memcached           => false,
   mysql               => false,
-  nfs_srver           => false,
+  nfs_client          => false,
+  nfs_server          => false,
   nginx               => false,
   ntp_client          => false,
   ntp_server          => false,
@@ -118,6 +119,7 @@ class {'librenms::application':
 1. [Mdadm](#mdadm) - SNMP extend
 1. [Memcached](#memcached) - SNMP extend
 1. [MySQL](#mysql) - SNMP extend
+1. [NFS Client](#nfs-client) - SNMP extend
 1. [NFS Server](#nfs-server) - SNMP extend
 1. [Nginx](#nginx) - SNMP extend
 1. [NTP Client](#ntp-client) - SNMP extend
@@ -365,6 +367,18 @@ class { 'librenms::applications::mysql':
 * `pass` Password. Default: root
 * `host` IP or Hostname Database Server is listening on. Default: localhost
 * `port` Port Database Server is listening on. Default  3306
+
+
+#### NFS Client
+
+Only FreeBSD Version present
+
+```puppet
+class { 'librenms::applications::nfs_client':
+}
+```
+
+No further configurations needed.
 
 
 #### NFS Server

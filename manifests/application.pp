@@ -18,6 +18,7 @@ class librenms::application (
     Boolean $mdadm = false,
     Boolean $memcached = false,
     Boolean $mysql = false,
+    Boolean $nfs_client = false,
     Boolean $nfs_server = false,
     Boolean $nginx = false,
     Boolean $ntp_client = false,
@@ -120,6 +121,10 @@ class librenms::application (
 
     if $mysql {
         include librenms::applications::mysql
+    }
+
+    if $nfs_client {
+        include librenms::applications::nfs_client
     }
 
     if $nfs_server {
