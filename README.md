@@ -3,6 +3,7 @@ Puppet Module for LibreNMS SNMP Agents
 
 [![Build Status](https://travis-ci.org/SourceDoctor/puppet-librenms.svg?branch=master)](https://travis-ci.org/SourceDoctor/puppet-librenms)
 
+
 Description
 -----------
 
@@ -10,15 +11,18 @@ Puppet Module to configure and distribute [LibreNMS_SNMP_Agents](https://docs.li
 
 (Server configuration will come in a future version also)
 
+
 Dependencies
 ------------
 This Modul doesn't modify configuration of services the Agents are for.
 So please ensure the services you want to monitor match the requirements.
 Details for what to do are described or linked per Agent.
 
+
 General Information
 -------------------
 It's recommended to use [puppet-hiera](https://puppet.com/docs/puppet/latest/hiera_intro.html) for configuration
+
 
 Usage
 -----
