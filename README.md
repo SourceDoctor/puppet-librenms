@@ -77,6 +77,7 @@ class {'librenms::application':
   osupdate            => false,
   php_fpm             => false,
   postfix             => false,
+  powerdns            => false,
   puppet_agent        => false,
   pureftpd            => false,
   redis               => false,
@@ -118,6 +119,7 @@ class {'librenms::application':
 1. [OS Updates](#os-updates) - SNMP extend
 1. [PHP FPM](#php-fpm) - SNMP extend
 1. [Postfix](#postfix) - SNMP extend
+1. [PowerDNS](#powerdns) - SNMP extend
 1. [Puppet Agent](#puppet_agent) - SNMP extend
 1. [PureFTPd](#pureftpd) - SNMP extend
 1. [Redis](#redis) - SNMP extend
@@ -420,6 +422,15 @@ For Details take a look here [Puppet_Agent](https://docs.librenms.org/Extensions
 #### Postfix
 ```puppet
 class { 'librenms::applications::postfix':
+}
+```
+
+No further configurations needed.
+
+
+#### PowerDNS
+```puppet
+class { 'librenms::applications::powerdns':
 }
 ```
 
