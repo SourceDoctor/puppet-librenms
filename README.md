@@ -90,6 +90,7 @@ class {'librenms::application':
   squid               => false,
   ups_apcups          => false,
   ups_nut             => false,
+  zfs                 => false,
 }
 ```
 
@@ -135,6 +136,7 @@ class {'librenms::application':
 1. [Squid](#squid) - SNMP extend
 1. [UPS APCUPS](#ups-apcups) - SNMP extend
 1. [UPS Nut](#ups-nut) - SNMP extend
+1. [ZFS](#zfs) - SNMP extend
 
 
 #### Apache
@@ -624,6 +626,15 @@ No further configurations needed.
 #### UPS Nut
 ```puppet
 class { 'librenms::applications::ups_nut':
+}
+```
+
+No further configurations needed.
+
+
+#### ZFS
+```puppet
+class { 'librenms::applications::zfs':
 }
 ```
 

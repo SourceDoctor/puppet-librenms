@@ -43,6 +43,7 @@ class librenms::application (
     Boolean $unbound = false,
     Boolean $ups_apcups = false,
     Boolean $ups_nut = false,
+    Boolean $zfs = false,
 ){
 
     # https://docs.librenms.org/Extensions/Applications/
@@ -217,6 +218,10 @@ class librenms::application (
 
     if $ups_nut {
         include librenms::applications::ups_nut
+    }
+
+    if $zfs {
+        include librenms::applications::zfs
     }
 
     include librenms::cache_dir
