@@ -77,6 +77,7 @@ class {'librenms::application':
   open_grid_scheduler => false,
   osupdate            => false,
   php_fpm             => false,
+  pi_hole             => false,
   portactivity        => false,
   postfix             => false,
   powerdns            => false,
@@ -123,6 +124,7 @@ class {'librenms::application':
 1. [Open Grid Scheduler](#open-grid-scheduler) - SNMP extend
 1. [OS Updates](#os-updates) - SNMP extend
 1. [PHP FPM](#php-fpm) - SNMP extend
+1. [Pi-Hole](#pi-hole) - SNMP extend
 1. [Portactivity](#portactivity) - SNMP extend
 1. [Postfix](#postfix) - SNMP extend
 1. [PowerDNS](#powerdns) - SNMP extend
@@ -425,6 +427,16 @@ class { 'librenms::applications::php_fpm':
 ```
 
 No further configurations needed.
+
+
+#### Pi Hole
+```puppet
+class { 'librenms::applications::pi_hole':
+  api_auth_key => 'someapiauthkey'
+}
+```
+
+* `api_auth_key` To get all data you must configure your API auth token from Pi-hole server.
 
 
 #### Portactivity
