@@ -18,6 +18,7 @@ class librenms::application (
     Boolean $mdadm = false,
     Boolean $memcached = false,
     Boolean $mysql = false,
+    Boolean $nginx = false,
     Boolean $ntp_client = false,
     Boolean $ntp_server = false,
     Boolean $nvidia = false,
@@ -115,6 +116,10 @@ class librenms::application (
 
     if $mysql {
         include librenms::applications::mysql
+    }
+
+    if $nginx {
+        include librenms::applications::nginx
     }
 
     if $nvidia {
