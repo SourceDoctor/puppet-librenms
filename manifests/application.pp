@@ -40,6 +40,7 @@ class librenms::application (
     Boolean $seafile = false,
     Boolean $smartmontools = false,
     Boolean $squid = false,
+    Boolean $unbound = false,
     Boolean $ups_apcups = false,
     Boolean $ups_nut = false,
 ){
@@ -204,6 +205,10 @@ class librenms::application (
 
     if $squid {
         include librenms::applications::squid
+    }
+
+    if $unbound {
+        include librenms::applications::unbound
     }
 
     if $ups_apcups {

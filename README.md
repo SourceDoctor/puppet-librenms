@@ -602,6 +602,16 @@ Ensure all depending configurations are done.
 For Details take a look here [Squid](https://docs.librenms.org/Extensions/Applications/#squid)
 
 
+#### Unbound
+```puppet
+class { 'librenms::applications::unbound':
+}
+```
+
+Ensure all depending configurations are done.
+For Details take a look here [Unbound](https://docs.librenms.org/Extensions/Applications/#unbound)
+
+
 #### UPS APCUPS
 ```puppet
 class { 'librenms::applications::ups_apcups':
