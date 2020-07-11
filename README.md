@@ -76,8 +76,8 @@ class {'librenms::application':
   open_grid_scheduler => false,
   osupdate            => false,
   php_fpm             => false,
-  postfix             => false,
   portactivity        => false,
+  postfix             => false,
   powerdns            => false,
   powerdns_recursor   => false,
   puppet_agent        => false,
@@ -120,8 +120,8 @@ class {'librenms::application':
 1. [Open Grid Scheduler](#open-grid-scheduler) - SNMP extend
 1. [OS Updates](#os-updates) - SNMP extend
 1. [PHP FPM](#php-fpm) - SNMP extend
-1. [Postfix](#postfix) - SNMP extend
 1. [Portactivity](#portactivity) - SNMP extend
+1. [Postfix](#postfix) - SNMP extend
 1. [PowerDNS](#powerdns) - SNMP extend
 1. [PowerDNS Recursor](#powerdns-recursor) - SNMP extend
 1. [Puppet Agent](#puppet_agent) - SNMP extend
