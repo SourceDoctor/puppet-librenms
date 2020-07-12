@@ -602,9 +602,9 @@ class { 'librenms::applications::seafile':
 ```
 
 * `url` Url how to get access to Seafile Server. Default: ''
-* `username` Login to Seafile Server. It is important that used Login has admin privileges. Otherwise most API calls will be denied. Default: ''
+* `login` Login to Seafile Server. It is important that used Login has admin privileges. Otherwise most API calls will be denied. Default: ''
 * `password` Password to the configured login. Default: ''
-* `account_identifier` Defines how user accounts are listed in RRD Graph. Options are: name, email. Default: name
+* `identifier` Defines how user accounts are listed in RRD Graph. Options are: name, email. Default: name
 * `hide_monitoring_account` With this Boolean you can hide the Account which you use to access Seafile API. Default: true
 
 
