@@ -113,6 +113,7 @@ class {'librenms::application':
 1. [C.H.I.P](#chip) - SNMP extend
 1. [Certificate](#certificate) - SNMP extend
 1. [DHCP Stats](#dhcp-stats) - SNMP extend
+1. [Distribution](#distribution) - SNMP extend
 1. [Entropy](#entropy) - SNMP extend
 1. [Exim](#exim) - SNMP extend
 1. [FreeRADIUS](#freeradius) - SNMP extend
