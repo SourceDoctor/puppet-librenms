@@ -249,7 +249,7 @@ class { 'librenms::applications::dhcp':
 This Agent returns Operation System Details to LibreNMS
 
 ```puppet
-class { 'librenms::applications::entropy':
+class { 'librenms::applications::distribution':
 }
 ```
 
