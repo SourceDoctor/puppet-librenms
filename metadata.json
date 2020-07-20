@@ -1,6 +1,6 @@
 {
-  "name": "puppet-librenms",
-  "version": "0.9",
+  "name": "sourcedoctor-librenms",
+  "version": "0.9.5",
   "author": "SourceDoctor",
   "summary": "LibreNMS Agent Configuration",
   "license": "MIT",
@@ -17,18 +17,6 @@
       "version_requirement": ">= 4.25.0 < 7.0.0"
     }
   ],
-  "data_provider": null,
-  "tags": [
-    "puppet",
-    "librenms",
-    "agent"
-  ],
-  "requirements": [
-    {
-      "name": "puppet",
-      "version_requirement": ">= 5.5.8 < 7.0.0"
-    }
-  ],
   "operatingsystem_support": [
     {
       "operatingsystem": "Debian"
@@ -36,5 +24,19 @@
     {
       "operatingsystem": "Ubuntu"
     }
-  ]
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 5.5.8 < 7.0.0"
+    }
+  ],
+  "tags": [
+    "puppet",
+    "librenms",
+    "agent"
+  ],
+  "pdk-version": "1.18.1",
+  "template-url": "pdk-default#1.18.1",
+  "template-ref": "tags/1.18.1-0-g3d2e75c"
 }
