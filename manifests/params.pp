@@ -31,8 +31,7 @@ class librenms::params {
 
           $pflogsumm_package = 'pflogsumm'
 
-          $python_urlgrabber_package = 'python-urlgrabber'
-          $python_pycurl_package = 'python-pycurl'
+          $python3_urllib3_package = 'python3-urllib3'
           $python3_openssl_package = 'python3-openssl'
           $python3_requests_package = 'python3-requests'
           $python3_yaml_package = 'python3-yaml'

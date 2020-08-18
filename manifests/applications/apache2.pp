@@ -2,7 +2,7 @@ class librenms::applications::apache2 (
   Boolean $enabled = true,
 ) inherits librenms::params {
 
-    ensure_packages([$librenms::params::python_urlgrabber_package, $librenms::params::python_pycurl_package], {ensure => present})
+    ensure_packages([$librenms::params::python3_urllib3_package], {ensure => present})
 
     create_resources(librenms::fetch, {
             'apache-stats.py' => {
