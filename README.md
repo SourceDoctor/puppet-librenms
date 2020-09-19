@@ -72,6 +72,7 @@ class {'librenms::application':
   freeswitch          => false,
   gpsd                => false,
   mdadm               => false,
+  icecast             => false,
   memcached           => false,
   mysql               => false,
   nfs_client          => false,
@@ -81,6 +82,7 @@ class {'librenms::application':
   ntp_server          => false,
   nvidia              => false,
   open_grid_scheduler => false,
+  opensips            => false,
   osupdate            => false,
   php_fpm             => false,
   pi_hole             => false,
@@ -97,6 +99,7 @@ class {'librenms::application':
   squid               => false,
   ups_apcups          => false,
   ups_nut             => false,
+  voipmon             => false,
   zfs                 => false,
 }
 ```
@@ -119,6 +122,7 @@ class {'librenms::application':
 1. [FreeRADIUS](#freeradius) - SNMP extend
 1. [FreeSwitch](#freeswitch) - SNMP extend
 1. [GPSD](#gpsd) - SNMP extend
+1. [Icecast](#icecast) - SNMP extend
 1. [Mailcow-dockerized Postfix](#mailcow-dockerized-postfix) - SNMP extend
 1. [Mailscanner](#mailscanner) - SNMP extend
 1. [Mdadm](#mdadm) - SNMP extend
@@ -131,6 +135,7 @@ class {'librenms::application':
 1. [NTP Server/NTPD](#ntp-server-aka-ntpd) - SNMP extend
 1. [Nvidia GPU](#nvidia-gpu) - SNMP extend
 1. [Open Grid Scheduler](#open-grid-scheduler) - SNMP extend
+1. [Opensips](#opensips) - SNMP extend
 1. [OS Updates](#os-updates) - SNMP extend
 1. [PHP FPM](#php-fpm) - SNMP extend
 1. [Pi-Hole](#pi-hole) - SNMP extend
@@ -147,6 +152,7 @@ class {'librenms::application':
 1. [Squid](#squid) - SNMP extend
 1. [UPS APCUPS](#ups-apcups) - SNMP extend
 1. [UPS Nut](#ups-nut) - SNMP extend
+1. [Voip Monitor](#voipmon) - SNMP extend
 1. [ZFS](#zfs) - SNMP extend
 
 
@@ -322,6 +328,15 @@ class { 'librenms::applications::gpsd':
 No further configurations needed.
 
 
+#### Icecast
+```puppet
+class { 'librenms::applications::icecast':
+}
+```
+
+No further configurations needed.
+
+
 #### Mailcow-dockerized postfix
 ```puppet
 class { 'librenms::applications::mailcow_dockerized_postfix':
@@ -435,6 +450,15 @@ No further configurations needed.
 #### Open Grid Scheduler
 ```puppet
 class { 'librenms::applications::open_grid_scheduler':
+}
+```
+
+No further configurations needed.
+
+
+#### Opensips
+```puppet
+class { 'librenms::applications::opensips':
 }
 ```
 
@@ -668,6 +692,15 @@ No further configurations needed.
 #### UPS Nut
 ```puppet
 class { 'librenms::applications::ups_nut':
+}
+```
+
+No further configurations needed.
+
+
+#### Voipmon
+```puppet
+class { 'librenms::applications::voipmon':
 }
 ```
 

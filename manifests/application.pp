@@ -46,6 +46,7 @@ class librenms::application (
     Boolean $unbound = false,
     Boolean $ups_apcups = false,
     Boolean $ups_nut = false,
+    Boolean $voipmon = false,
     Boolean $zfs = false,
 ){
 
@@ -103,6 +104,10 @@ class librenms::application (
         include librenms::applications::gpsd
     }
 
+    if $icecast {
+        include librenms::applications::icecast
+    }
+
     if $mailcow_dockerized_postfix {
         include librenms::applications::mailcow_dockerized_postfix
     }
@@ -149,6 +154,10 @@ class librenms::application (
 
     if $open_grid_scheduler {
         include librenms::applications::open_grid_scheduler
+    }
+
+    if $opensips {
+        include librenms::applications::opensips
     }
 
     if $osupdate {
@@ -233,6 +242,10 @@ class librenms::application (
 
     if $ups_nut {
         include librenms::applications::ups_nut
+    }
+
+    if $voipmon {
+        include librenms::applications::voipmon
     }
 
     if $zfs {
