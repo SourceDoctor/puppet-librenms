@@ -26,6 +26,7 @@ class librenms::application (
     Boolean $ntp_server = false,
     Boolean $nvidia = false,
     Boolean $open_grid_scheduler = false,
+    Boolean $opensips = false,
     Boolean $osupdate = false,
     Boolean $php_fpm = false,
     Boolean $pi_hole = false,

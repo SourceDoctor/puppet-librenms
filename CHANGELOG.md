@@ -2,6 +2,7 @@
 # CHANGELOG
 
  * Updating Agent Script ; application.pp
+ * Updating Agent Script ; application.pp
  * Updating Agent Scripts ; README.md; icecast-stats.sh; opensips-stats.sh; voipmon-stats.sh; application.pp; icecast.pp; open...
 
 ## v0.9.9
@@ -31,6 +32,9 @@
  * update readme
 
 ## v0.95
+
+## v0.9.11
+ * Updating Agent Script ; application.pp
 
 ## v0.9.10
  * Updating Agent Scripts ; README.md; icecast-stats.sh; opensips-stats.sh; voipmon-stats.sh; application.pp; icecast.pp; open...
