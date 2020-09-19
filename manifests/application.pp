@@ -13,6 +13,7 @@ class librenms::application (
     Boolean $freeradius = false,
     Boolean $freeswitch = false,
     Boolean $gpsd = false,
+    Boolean $icecast = false,
     Boolean $mailcow_dockerized_postfix = false,
     Boolean $mailscanner = false,
     Boolean $mdadm = false,

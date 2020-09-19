@@ -1,6 +1,7 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; application.pp
  * Updating Agent Scripts ; README.md; icecast-stats.sh; opensips-stats.sh; voipmon-stats.sh; application.pp; icecast.pp; open...
 
 ## v0.9.9
@@ -30,6 +31,23 @@
  * update readme
 
 ## v0.95
+
+## v0.9.10
+ * Updating Agent Scripts ; README.md; icecast-stats.sh; opensips-stats.sh; voipmon-stats.sh; application.pp; icecast.pp; open...
+ * update metadata
+ * Updating Agent Script ; raspberry.sh
+ * Updating Agent Script ; distro
+ * Updating Agent Scripts ; apache-stats.py; apache2.pp; params.pp
+ * update metadata
+ * adding workflow scripts
+ * puppet forge compatibility
+ * Updating Agent Script; mdadm
+ * Updating ; pi-hole; ups-nut.sh
+ * added Distribution to Readme
+ * added Distribution to Readme. Closes #34
+ * Updating ; mdadm
+ * update readme
+ * update readme
  * lint fix
  * lint fix
  * adding NFS-Client. Closes #5
