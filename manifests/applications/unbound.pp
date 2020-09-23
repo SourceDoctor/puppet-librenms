@@ -8,8 +8,9 @@ class librenms::applications::unbound (
     }})
 
     librenms::snmpd{'unbound':
-        use    => $enabled,
-        script => 'unbound'
+        use     => $enabled,
+        script  => 'unbound',
+        do_sudo => true,
     }
 }
 
