@@ -1,6 +1,8 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; osupdate
+ * run Unbound Agent via sudo
  * Updating Agent Script ; distro
  * Updating Agent Script ; application.pp
  * Updating Agent Script ; application.pp
@@ -33,6 +35,9 @@
  * update readme
 
 ## v0.95
+
+## v0.9.13
+ * Updating Agent Script ; distro
 
 ## v0.9.12
  * Updating Agent Script ; application.pp
@@ -105,7 +110,8 @@
  * build result url update
  * build tests
 
-## v0.9.12
+## v0.9.13
+ * Updating Agent Script ; distro
  * Updating Agent Script ; application.pp
  * Updating Agent Script ; application.pp
  * Updating Agent Scripts ; README.md; icecast-stats.sh; opensips-stats.sh; voipmon-stats.sh; application.pp; icecast.pp; open...
