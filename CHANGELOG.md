@@ -1,6 +1,7 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; freeradius.sh
  * Updating Agent Script ; distro
  * Updating Agent Script ; osupdate
  * run Unbound Agent via sudo
