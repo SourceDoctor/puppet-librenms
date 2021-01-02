@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Scripts ; distro; opensips-stats.sh
+ * update workflow
+ * update metadata
  * Updating Agent Script ; freeradius.sh
  * Updating Agent Script ; distro
  * Updating Agent Script ; osupdate
@@ -37,6 +40,13 @@
  * update readme
 
 ## v0.95
+
+## v0.9.14
+ * update metadata
+ * Updating Agent Script ; freeradius.sh
+ * Updating Agent Script ; distro
+ * Updating Agent Script ; osupdate
+ * run Unbound Agent via sudo
 
 ## v0.9.13
  * Updating Agent Script ; distro
@@ -112,7 +122,12 @@
  * build result url update
  * build tests
 
-## v0.9.13
+## v0.9.14
+ * update metadata
+ * Updating Agent Script ; freeradius.sh
+ * Updating Agent Script ; distro
+ * Updating Agent Script ; osupdate
+ * run Unbound Agent via sudo
  * Updating Agent Script ; distro
  * Updating Agent Script ; application.pp
  * Updating Agent Script ; application.pp
