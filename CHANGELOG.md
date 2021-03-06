@@ -1,6 +1,7 @@
 
 # CHANGELOG
 
+ * Updating Agent Scripts ; test.log; test.sh
  * Updating Agent Script ; gpsd
  * Updating Agent Script ; mdadm
  * Updating Agent Script ; mdadm
@@ -43,6 +44,9 @@
  * update readme
 
 ## v0.95
+
+## v0.9.17
+ * Updating Agent Script ; gpsd
 
 ## v0.9.16
  * Updating Agent Script ; mdadm
@@ -133,7 +137,8 @@
  * build result url update
  * build tests
 
-## v0.9.16
+## v0.9.17
+ * Updating Agent Script ; gpsd
  * Updating Agent Script ; mdadm
  * Updating Agent Script ; mdadm
  * Updating Agent Scripts ; distro; opensips-stats.sh
