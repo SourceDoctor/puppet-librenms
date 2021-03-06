@@ -1,6 +1,7 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; test.sh
  * Updating Agent Scripts ; test.log; test.sh
  * Updating Agent Script ; gpsd
  * Updating Agent Script ; mdadm
@@ -44,6 +45,9 @@
  * update readme
 
 ## v0.95
+
+## v0.9.18
+ * Updating Agent Scripts ; test.log; test.sh
 
 ## v0.9.17
  * Updating Agent Script ; gpsd
@@ -137,7 +141,8 @@
  * build result url update
  * build tests
 
-## v0.9.17
+## v0.9.18
+ * Updating Agent Scripts ; test.log; test.sh
  * Updating Agent Script ; gpsd
  * Updating Agent Script ; mdadm
  * Updating Agent Script ; mdadm
