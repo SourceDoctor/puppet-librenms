@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; gpsd
+
+## v0.9.22
  * Updating Agent Scripts ; apache-stats.py; backupninja.py; certificate.py; chip.sh; dhcp.py; distro; exim-stats.sh; freeradi...
 
 ## v0.9.21
