@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Scripts ; osupdate; phpfpmsp
+
+## v0.9.23
  * Updating Agent Script ; gpsd
 
 ## v0.9.22
