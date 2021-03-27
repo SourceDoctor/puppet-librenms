@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Scripts ; distro; ntp-server.sh; sdfsinfo
+
+## v0.9.24
  * Updating Agent Scripts ; osupdate; phpfpmsp
 
 ## v0.9.23
