@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; zfs-freebsd
+
+## v0.9.25
  * Updating Agent Scripts ; distro; ntp-server.sh; sdfsinfo
 
 ## v0.9.24
