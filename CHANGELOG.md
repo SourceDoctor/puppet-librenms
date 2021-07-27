@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; ups-nut.sh
+
+## v0.9.26
  * Updating Agent Script ; zfs-freebsd
 
 ## v0.9.25
