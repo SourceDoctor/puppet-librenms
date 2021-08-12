@@ -1,5 +1,5 @@
 class librenms::applications::pi_hole (
-  Strng $api_auth_key,
+  String $api_auth_key,
   Boolean $enabled = true,
 ) inherits librenms::params {
 
