@@ -5,7 +5,7 @@ class librenms::applications::pi_hole (
 
     $snmpd_dir = $librenms::params::snmpd_dir
 
-    ensure_packages([$librenms::params::jq_package], {ensure => present})
+    ensure_packages([$librenms::params::jq_package, $librenms::params::curl_package], {ensure => present})
 
     if $enabled {
         $file_existance = 'present'
