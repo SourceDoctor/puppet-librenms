@@ -1,6 +1,12 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; distro
+ * add missing package
+ * add missing package jq
+ * string fix
+
+## v0.9.27
  * Updating Agent Script ; ups-nut.sh
 
 ## v0.9.26
