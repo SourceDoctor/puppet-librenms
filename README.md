@@ -692,10 +692,11 @@ No further configurations needed.
 #### UPS Nut
 ```puppet
 class { 'librenms::applications::ups_nut':
+  usv => 'my.usv.hostname',
 }
 ```
 
-No further configurations needed.
+* `usv` hostname of the USV which has to be monitored
 
 
 #### Voipmon

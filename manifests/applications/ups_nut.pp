@@ -1,4 +1,5 @@
 class librenms::applications::ups_nut (
+  String $usv,
   Boolean $enabled = true,
 ) inherits librenms::params {
 
@@ -8,8 +9,9 @@ class librenms::applications::ups_nut (
     }})
 
     librenms::snmpd{'ups-nut':
-        use    => $enabled,
-        script => 'ups-nut.sh'
+        use         => $enabled,
+        script_args => $usv,
+        script      => 'ups-nut.sh'
     }
 }
 
