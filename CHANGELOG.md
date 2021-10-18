@@ -1,6 +1,10 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; portactivity
+ * UPS-Nut snmpd.extend Parameter
+
+## v0.9.28
  * Updating Agent Script ; distro
  * add missing package
  * add missing package jq
