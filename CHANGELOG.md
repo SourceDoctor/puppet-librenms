@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; ntp-server.sh
+
+## v0.9.29
  * Updating Agent Script ; portactivity
  * UPS-Nut snmpd.extend Parameter
 
