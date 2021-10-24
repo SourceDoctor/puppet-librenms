@@ -1,6 +1,10 @@
 
 # CHANGELOG
 
+ * Updating Agent Scripts ; distro; puppet_agent.py
+ * update  workflow
+
+## v0.9.30
  * Updating Agent Script ; ntp-server.sh
 
 ## v0.9.29
@@ -79,9 +83,9 @@
 ## v0.9.8
  * Updating Agent Script ; raspberry.sh
 
-## v0.9.7
-
 ## v0.9.6.2
+
+## v0.9.7
  * Updating Agent Script ; distro
 
 ## v0.9.6.1
