@@ -1,6 +1,10 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; metadata.json
+
+## v0.9.31
+ * update workflow
  * Updating Agent Scripts ; distro; puppet_agent.py
  * update  workflow
 
