@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Scripts ; fail2ban; freeradius.sh; smart
+
+## v0.9.32
  * Updating Agent Script ; metadata.json
 
 ## v0.9.31
