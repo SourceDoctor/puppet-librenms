@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * adding supervisord
+
+## v0.9.33
  * Updating Agent Scripts ; fail2ban; freeradius.sh; smart
 
 ## v0.9.32

@@ -97,6 +97,7 @@ class {'librenms::application':
   seafile             => false,
   smartmontools       => false,
   squid               => false,
+  supervisord         => false,
   ups_apcups          => false,
   ups_nut             => false,
   voipmon             => false,
@@ -150,6 +151,7 @@ class {'librenms::application':
 1. [Seafile](#seafile) - SNMP extend
 1. [SMART](#smart) - SNMP extend
 1. [Squid](#squid) - SNMP extend
+1. [Supervisord](#supervisord) - SNMP extend
 1. [UPS APCUPS](#ups-apcups) - SNMP extend
 1. [UPS Nut](#ups-nut) - SNMP extend
 1. [Voip Monitor](#voipmon) - SNMP extend
@@ -668,6 +670,15 @@ class { 'librenms::applications::squid':
 
 Ensure all depending configurations are done.
 For Details take a look here [Squid](https://docs.librenms.org/Extensions/Applications/#squid)
+
+
+#### Supervisord
+```puppet
+class { 'librenms::applications::supervisord':
+}
+```
+
+No further configurations needed.
 
 
 #### Unbound
