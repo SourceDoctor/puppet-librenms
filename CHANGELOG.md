@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; osupdate
+
+## v0.9.34
  * adding supervisord
 
 ## v0.9.33
