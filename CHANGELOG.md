@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; distro
+
+## v0.9.35
  * Updating Agent Script ; osupdate
 
 ## v0.9.34
