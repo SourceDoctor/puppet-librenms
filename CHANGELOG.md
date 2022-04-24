@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Scripts ; fbsdnfsclient; mysql
+
+## v0.9.36
  * Updating Agent Script ; distro
 
 ## v0.9.35
