@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; gpsd
+
+## v0.9.37
  * Updating Agent Scripts ; fbsdnfsclient; mysql
 
 ## v0.9.36
