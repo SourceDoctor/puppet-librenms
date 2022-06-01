@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; dhcp.py
+
+## v0.9.38
  * Updating Agent Script ; gpsd
 
 ## v0.9.37
