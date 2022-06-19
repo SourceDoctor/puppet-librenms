@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; mdadm
+
+## v0.9.39
  * Updating Agent Script ; dhcp.py
 
 ## v0.9.38
