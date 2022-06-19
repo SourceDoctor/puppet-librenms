@@ -4,7 +4,7 @@ class librenms::applications::mdadm (
 
     $snmpd_dir = $librenms::params::snmpd_dir
 
-    ensure_packages([$librenms::params::jq_package)
+    ensure_packages([$librenms::params::jq_package])
 
     if $enabled {
         $file_existance = 'present'
