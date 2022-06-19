@@ -3,6 +3,12 @@
 
  * Updating Agent Script ; mdadm
 
+## v0.9.41
+ * Update dependencies mdadm
+
+## v0.9.40
+ * Updating Agent Script ; mdadm
+
 ## v0.9.39
  * Updating Agent Script ; dhcp.py
 
