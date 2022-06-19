@@ -4,18 +4,12 @@ class librenms::applications::mdadm (
 
     $snmpd_dir = $librenms::params::snmpd_dir
 
+    ensure_packages([$librenms::params::jq_package)
+
     if $enabled {
         $file_existance = 'present'
     } else {
         $file_existance = 'absent'
-    }
-
-    file {"${snmpd_dir}/mdadm.conf":
-        ensure  => $file_existance,
-        owner   => 'root',
-        group   => 'root',
-        mode    => '0755',
-        content => template('librenms/mdadm.conf.erb'),
     }
 
     create_resources(librenms::fetch, {
