@@ -1,6 +1,10 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; osupdate
+ * grammar fix
+
+## v0.9.42
  * Updating Agent Script ; mdadm
 
 ## v0.9.41
