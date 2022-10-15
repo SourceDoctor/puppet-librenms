@@ -3,6 +3,9 @@
 
  * Updating Agent Script ; mdadm
 
+## v0.9.44
+ * Updating Agent Script ; mdadm
+
 ## v0.9.43
  * Updating Agent Script ; osupdate
  * grammar fix
