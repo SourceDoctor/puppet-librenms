@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; memcached
+
+## v0.9.45
  * Updating Agent Script ; mdadm
 
 ## v0.9.44
