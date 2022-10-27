@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; mysql
+
+## v0.9.46
  * Updating Agent Script ; memcached
 
 ## v0.9.45
