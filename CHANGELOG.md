@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; puppet_agent.py
+
+## v0.9.47
  * Updating Agent Script ; mysql
 
 ## v0.9.46
