@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; postgres
+
+## v0.9.48
  * Updating Agent Script ; puppet_agent.py
 
 ## v0.9.47
