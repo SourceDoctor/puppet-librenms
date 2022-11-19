@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; ups-nut.sh
+
+## v0.9.49
  * Updating Agent Script ; postgres
 
 ## v0.9.48
