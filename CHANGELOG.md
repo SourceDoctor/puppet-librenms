@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; certificate.py
+
+## v0.9.50
  * Updating Agent Script ; ups-nut.sh
 
 ## v0.9.49
