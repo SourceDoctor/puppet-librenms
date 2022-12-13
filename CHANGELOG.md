@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; fail2ban
+
+## v0.9.51
  * Updating Agent Script ; certificate.py
 
 ## v0.9.50
