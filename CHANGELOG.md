@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; pi-hole
+
+## v0.9.52
  * Updating Agent Script ; fail2ban
 
 ## v0.9.51
