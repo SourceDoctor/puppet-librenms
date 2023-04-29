@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; osupdate
+
+## v0.9.53
  * Updating Agent Script ; pi-hole
 
 ## v0.9.52
