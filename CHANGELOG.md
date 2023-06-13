@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; osupdate
+
+## v0.9.55
  * Updating Agent Script ; postgres
 
 ## v0.9.54
