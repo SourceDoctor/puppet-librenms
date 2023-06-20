@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; smart
+
+## v0.9.56
  * Updating Agent Script ; osupdate
 
 ## v0.9.55
