@@ -11,7 +11,8 @@ class librenms::applications::puppet_agent (
     }})
 
     librenms::snmpd{'puppet-agent':
-        use    => $enabled,
-        script => 'puppet_agent.py'
+        use     => $enabled,
+        script  => 'puppet_agent.py',
+        do_sudo => true
     }
 }
