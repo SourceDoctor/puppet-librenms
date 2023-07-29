@@ -1,6 +1,11 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; puppet_agent.py
+ * run puppet agent via sudo
+ * puppet agent - parse for puppet 7 summary file
+
+## v0.9.57
  * Updating Agent Script ; smart
 
 ## v0.9.56
