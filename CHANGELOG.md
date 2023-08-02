@@ -2,6 +2,9 @@
 # CHANGELOG
 
  * Updating Agent Script ; puppet_agent.py
+
+## v0.9.58
+ * Updating Agent Script ; puppet_agent.py
  * run puppet agent via sudo
  * puppet agent - parse for puppet 7 summary file
 
