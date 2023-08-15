@@ -11,11 +11,11 @@ define librenms::snmpd (
     Optional[Hash] $custom = {}, # custom values for custom snmp template
 )
 {
-    include librenms::params
+    include librenms
 
-    $snmpd_dir = $librenms::params::snmpd_dir
-    $snmpd_extend_dir = $librenms::params::snmpd_extend_dir
-    $sudo_bin = $librenms::params::sudo_bin
+    $snmpd_dir = $librenms::snmpd_dir
+    $snmpd_extend_dir = $librenms::snmpd_extend_dir
+    $sudo_bin = $librenms::sudo_bin
 
     if $use {
         $file_existance = 'present'

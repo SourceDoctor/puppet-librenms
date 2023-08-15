@@ -6,11 +6,11 @@ define librenms::sudo (
     Boolean $use = true,  # install extends?
 )
 {
-    include librenms::params
+    include librenms
 
-    $snmpd_dir = $librenms::params::snmpd_dir
-    $sudo_dir = $librenms::params::sudo_dir
-    $sudo_user = $librenms::params::snmpd_user
+    $snmpd_dir = $librenms::snmpd_dir
+    $sudo_dir = $librenms::sudo_dir
+    $sudo_user = $librenms::snmpd_user
 
     if $use {
         $file_existance = 'present'
