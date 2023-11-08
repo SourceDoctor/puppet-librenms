@@ -1,6 +1,11 @@
 
 # CHANGELOG
 
+ * Updating Agent Scripts ; distro; mailcow-dockerized-postfix
+ * configurable snmp extend directory
+ * configurable snmp extend directory
+
+## v0.9.59
  * Updating Agent Script ; puppet_agent.py
 
 ## v0.9.58
