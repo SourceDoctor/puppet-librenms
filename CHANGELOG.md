@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; mysql
+
+## v0.9.60
  * Updating Agent Scripts ; distro; mailcow-dockerized-postfix
  * configurable snmp extend directory
  * configurable snmp extend directory
