@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; dhcp.py
+
+## v0.9.61
  * Updating Agent Script ; mysql
 
 ## v0.9.60
