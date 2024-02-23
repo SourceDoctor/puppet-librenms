@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Scripts ; memcached; nvidia
+
+## v0.9.62
  * Updating Agent Script ; dhcp.py
 
 ## v0.9.61
