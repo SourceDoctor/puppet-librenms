@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; ups-nut.sh
+
+## v0.9.63
  * Updating Agent Scripts ; memcached; nvidia
 
 ## v0.9.62
