@@ -40,10 +40,11 @@ class { 'librenms':
 ### Discovery Trigger Configuration
 
 Configuration of Discovery Trigger for LibreNMS.
-It's called everytime a LibreNMS Agent is installed.
+Would be called everytime a LibreNMS Agent is installed.
 
 ```puppet
 class {'librenms::discovery':
+    enabled            => false,
     librenms_server    => 'librenms.local.domain',
     api_token          => 'myAdminApiToken',
     transport_protocol => 'http',
