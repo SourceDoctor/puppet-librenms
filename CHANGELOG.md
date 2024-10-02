@@ -1,6 +1,10 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; powerdns.py
+ * Enforce discover on change now optional
+
+## v0.9.65
  * Updating Agent Script ; mdadm
 
 ## v0.9.64
