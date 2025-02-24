@@ -1,6 +1,6 @@
 {
   "name": "sourcedoctor-librenms",
-  "version": "0.9.66",
+  "version": "0.9.67",
   "author": "SourceDoctor",
   "summary": "LibreNMS Agent Configuration",
   "license": "MIT",

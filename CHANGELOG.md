@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; pi-hole
+
+## v0.9.66
  * Updating Agent Script ; powerdns.py
  * Enforce discover on change now optional
 
