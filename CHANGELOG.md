@@ -3,6 +3,9 @@
 
  * Updating Agent Script ; pi-hole
 
+## v0.9.67
+ * Updating Agent Script ; pi-hole
+
 ## v0.9.66
  * Updating Agent Script ; powerdns.py
  * Enforce discover on change now optional
