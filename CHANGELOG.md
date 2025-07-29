@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; asterisk
+
+## v0.9.69
  * Updating Agent Script ; proxmox
 
 ## v0.9.68
