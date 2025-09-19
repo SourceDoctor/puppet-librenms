@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; ntp-client
+
+## v0.9.70
  * Updating Agent Script ; asterisk
 
 ## v0.9.69
