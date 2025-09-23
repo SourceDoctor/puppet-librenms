@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; ups-nut.sh
+
+## v0.9.71
  * Updating Agent Script ; ntp-client
 
 ## v0.9.70
