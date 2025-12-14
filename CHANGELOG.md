@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Scripts ; ntp-server.sh; redis.py
+
+## v0.9.72
  * Updating Agent Script ; ups-nut.sh
 
 ## v0.9.71
