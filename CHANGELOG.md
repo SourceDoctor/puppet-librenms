@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; distro
+
+## v0.9.73
  * Updating Agent Scripts ; ntp-server.sh; redis.py
 
 ## v0.9.72
