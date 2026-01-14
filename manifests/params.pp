@@ -1,8 +1,8 @@
 #
 class librenms::params {
-  case $::operatingsystem {
+  case $facts['os']['name'] {
     /^(Debian|Ubuntu)$/: {
-      case $::operatingsystemrelease {
+      case $facts['os']['distro']['codename'] {
         default: {
           $bind_user = 'bind'
           $bind_group = 'bind'
@@ -53,7 +53,8 @@ class librenms::params {
       }
     }
     default: {
-      fail("no support yet for ${::operatingsystem}")
+      fail("no support yet for $facts['os']['name']")
     }
   }
 }
+

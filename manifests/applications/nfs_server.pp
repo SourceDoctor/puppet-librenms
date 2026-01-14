@@ -2,7 +2,7 @@ class librenms::applications::nfs_server (
   Boolean $enabled = true,
 ) inherits librenms::params {
 
-    if $::operatingsystem == 'FreeBSD' {
+    if $facts['os']['name'] == 'FreeBSD' {
         create_resources(librenms::fetch, {
                 fbsdnfsserver => {
                 use => $enabled,

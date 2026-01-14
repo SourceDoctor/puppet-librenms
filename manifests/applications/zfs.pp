@@ -2,7 +2,7 @@ class librenms::applications::zfs (
   Boolean $enabled = true,
 ) inherits librenms::params {
 
-    if $::operatingsystem == 'FreeBSD' {
+    if $facts['os']['name'] == 'FreeBSD' {
         $agent_script = 'zfs-freebsd'
         $do_sudo = false
     } else {
