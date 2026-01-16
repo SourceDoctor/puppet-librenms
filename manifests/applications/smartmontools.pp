@@ -8,6 +8,8 @@ class librenms::applications::smartmontools (
 
     $snmpd_dir = $librenms::params::snmpd_dir
 
+    $blockdevices = $facts['disks'].keys.join(',');
+
     if $enabled {
         $file_existance = 'present'
     } else {
