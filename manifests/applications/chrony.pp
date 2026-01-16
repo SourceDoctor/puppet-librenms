@@ -8,8 +8,9 @@ class librenms::applications::chrony (
     }})
 
     librenms::snmpd{'chrony':
-        use    => $enabled,
-        script => 'chrony'
+        extend_name => 'chronyd',
+        use         => $enabled,
+        script      => 'chrony'
     }
 }
 
