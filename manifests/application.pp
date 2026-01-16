@@ -5,6 +5,7 @@ class librenms::application (
     Boolean $backupninja = false,
     Boolean $bind = false,
     Boolean $certificate = false,
+    Boolean $chrony = false,
     Boolean $dhcp = false,
     Boolean $distribution = false,
     Boolean $entropy = false,
@@ -73,6 +74,10 @@ class librenms::application (
 
     if $certificate {
         include librenms::applications::certificate
+    }
+
+    if $chrony {
+        include librenms::applications::chrony
     }
 
     if $dhcp {

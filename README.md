@@ -65,6 +65,7 @@ class {'librenms::application':
   bind                => false,
   certificate         => false,
   chip                => false,
+  chrony              => false,
   dhcp                => false,
   distribution        => false,
   entropy             => false,
@@ -117,6 +118,7 @@ class {'librenms::application':
 1. [BIND9/named](#bind9-aka-named) - SNMP extend
 1. [C.H.I.P](#chip) - SNMP extend
 1. [Certificate](#certificate) - SNMP extend
+1. [Chrony](#chrony) - SNMP extend
 1. [DHCP Stats](#dhcp-stats) - SNMP extend
 1. [Distribution](#distribution) - SNMP extend
 1. [Entropy](#entropy) - SNMP extend
@@ -237,6 +239,16 @@ Example:
 
 ```puppet
 class { 'librenms::applications::chip':
+}
+```
+
+No further configurations needed.
+
+
+#### Chrony
+
+```puppet
+class { 'librenms::applications::chrony':
 }
 ```
 
