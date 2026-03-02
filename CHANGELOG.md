@@ -1,6 +1,14 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; gpsd
+ * adding chrony application
+ * adding chrony application
+ * update facts
+ * update facts
+ * update ntp-server agent script
+
+## v0.9.75
  * Updating Agent Script ; osupdate
 
 ## v0.9.74
