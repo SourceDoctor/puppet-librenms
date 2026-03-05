@@ -2,6 +2,9 @@
 # CHANGELOG
 
  * Updating Agent Script ; gpsd
+
+## v0.9.76
+ * Updating Agent Script ; gpsd
  * adding chrony application
  * adding chrony application
  * update facts
