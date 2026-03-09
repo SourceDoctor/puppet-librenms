@@ -1,6 +1,9 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; powerdns-recursor
+
+## v0.9.78
  * Updating Agent Scripts ; ntp-client; proxmox; zfs-linux
 
 ## v0.9.77
