@@ -68,6 +68,7 @@ class {'librenms::application':
   chrony              => false,
   dhcp                => false,
   distribution        => false,
+  docker              => false,
   entropy             => false,
   exim                => false,
   freeradius          => false,

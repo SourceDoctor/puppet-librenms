@@ -8,6 +8,7 @@ class librenms::application (
     Boolean $chrony = false,
     Boolean $dhcp = false,
     Boolean $distribution = false,
+    Boolean $docker = false,
     Boolean $entropy = false,
     Boolean $exim = false,
     Boolean $fail2ban = false,
@@ -86,6 +87,10 @@ class librenms::application (
 
     if $distribution {
         include librenms::applications::distribution
+    }
+
+    if $docker {
+        include librenms::applications::docker
     }
 
     if $entropy {

@@ -36,6 +36,7 @@ class librenms::params {
           $python3_urllib3_package = 'python3-urllib3'
           $python3_openssl_package = 'python3-openssl'
           $python3_requests_package = 'python3-requests'
+          $python3_dateutil_package = 'python3-dateutil'
           $python3_yaml_package = 'python3-yaml'
 
           $smartctl_bin = '/usr/sbin/smartctl'
