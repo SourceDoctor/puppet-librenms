@@ -1,4 +1,4 @@
-class librenms::applications::seafile (
+class librenms::applications::docker (
   Boolean $enabled = true,
 ) inherits librenms::params {
 
