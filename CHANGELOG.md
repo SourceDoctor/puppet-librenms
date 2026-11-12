@@ -1,6 +1,11 @@
 
 # CHANGELOG
 
+ * Updating Agent Script ; distro
+ * fixes
+ * add docker application
+
+## v0.9.79
  * Updating Agent Script ; powerdns-recursor
 
 ## v0.9.78
